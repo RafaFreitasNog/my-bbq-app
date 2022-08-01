@@ -8,5 +8,5 @@
 
 #gradient-conteiner{
     height: 700px;
-    background: linear-gradient(to right, #030303 20%, #03030300);
+    background: linear-gradient(to right, var(--black) 20%, #03030300);
 }
