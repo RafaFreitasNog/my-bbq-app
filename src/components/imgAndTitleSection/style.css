@@ -1,0 +1,12 @@
+#img-conteiner {
+    height: 700px;
+    background-image: url('../../imgs/emerson-vieira-RO6Ke69Szhg-unsplash.jpg');
+    background-size: cover;
+    background-position-x: 100px;
+    background-position-y: -80px;
+}
+
+#gradient-conteiner{
+    height: 700px;
+    background: linear-gradient(to right, #030303 20%, #03030300);
+}
