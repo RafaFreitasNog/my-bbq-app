@@ -12,3 +12,40 @@
     --khaki: #C9B49E;
     --white: #E6E6E6;
 }
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 96px;
+    font-weight: 900;
+    color: var(--white);
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
