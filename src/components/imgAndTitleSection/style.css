@@ -1,4 +1,4 @@
-#img-conteiner {
+#hero-img-conteiner {
     height: 700px;
     background-image: url('../../imgs/emerson-vieira-RO6Ke69Szhg-unsplash.jpg');
     background-size: cover;
@@ -6,7 +6,27 @@
     background-position-y: -80px;
 }
 
-#gradient-conteiner{
+#hero-gradient-conteiner {
     height: 700px;
     background: linear-gradient(to right, var(--black) 20%, #03030300);
+}
+
+#hero-conteiner {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero-h1 {
+    margin-left: 80px;
+    width: 500px;
+}
+
+#hero-h4 {
+    margin-left: 80px;
+    margin-top: 24px;
+    width: 500px;
+    color: var(--khaki);
+
 }
