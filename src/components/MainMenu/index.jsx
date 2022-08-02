@@ -1,10 +1,12 @@
 import { Fragment } from "react";
-import ImgAndTitleSection from '../imgAndTitleSection';
+import HeroSection from '../heroSection';
+import Footer from "../footerSection";
 
 function MainMenu() {
     return (
         <Fragment>
-            <ImgAndTitleSection/>
+            <HeroSection/>
+            <Footer/>
         </Fragment>
     )
 }

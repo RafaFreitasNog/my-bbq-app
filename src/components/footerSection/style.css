@@ -1,0 +1,16 @@
+#footer-conteiner {
+    height: 240px;
+    background-color: var(--black);
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.h6-footer {
+    color: var(--white);
+    margin: 8px;
+}

@@ -2,12 +2,12 @@ import { Fragment } from "react";
 import './style.css'
 
 
-function ImgAndTitleSection() {
+function HeroSection() {
     return (
         <Fragment>
             <div id="hero-img-conteiner">
                 <div id="hero-gradient-conteiner">
-                    <div id="hero-conteiner">
+                    <div id="hero-content-conteiner">
                         <h1 id="hero-h1">MY BARBECUE APP</h1>
                         <h4 id="hero-h4">YOUR ONLINE MEAT CALCULATOR</h4>
                     </div>
@@ -17,4 +17,4 @@ function ImgAndTitleSection() {
     )
 }
 
-export default ImgAndTitleSection;
+export default HeroSection;
