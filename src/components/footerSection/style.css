@@ -1,7 +1,7 @@
 #footer-conteiner {
     height: 240px;
     background-color: var(--black);
-    margin-top: 24px;
+    margin-top: 64px;
     display: flex;
     flex-direction: column;
     justify-content: center;
