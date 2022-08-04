@@ -5,6 +5,19 @@
     border: 6px var(--red) solid;
 }
 
+.title-icon-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.title-icon {
+    width: 32px;
+    height: 32px;
+}
+
 .card {
     background-color: var(--red);
     height: 240px;
