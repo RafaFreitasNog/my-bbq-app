@@ -9,9 +9,9 @@
     grid-template-columns: repeat(12, 1fr);
     flex-direction: column;
     column-gap: 24px;
-    max-width: 1200px;
-    margin: auto;
-    
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: center;
 }
 
 body {

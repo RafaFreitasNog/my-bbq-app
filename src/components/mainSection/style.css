@@ -1,13 +1,3 @@
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    flex-direction: column;
-    column-gap: 24px;
-    max-width: 1200px;
-    margin: auto;
-    
-}
-
 #main-section-conteiner {
     background-color: var(--white);
     height: 600px;

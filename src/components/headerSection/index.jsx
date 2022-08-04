@@ -1,5 +1,6 @@
 import { Fragment } from "react";
-import './style.css'
+import './style.css';
+import navbarIcon from "../../imgs/bar-icon-white.png";
 
 
 function HeaderSection() {
@@ -7,7 +8,7 @@ function HeaderSection() {
         <Fragment>
             <div id="header-grid-conteiner">
                 <div id="header-grid" className="grid">
-                    
+                    <img src={navbarIcon} alt="nav bar logo" id="navbar-icon"/>
                 </div>
             </div>
         </Fragment>

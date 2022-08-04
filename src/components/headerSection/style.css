@@ -6,4 +6,8 @@
 
 #header-grid{
     height: 100%;
+    align-items: center;
+}
+
+#navbar-icon {
 }
