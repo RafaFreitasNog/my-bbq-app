@@ -1,11 +1,12 @@
 #hero-img-conteiner {
-    height: 80vh;
-    min-height: 500px;
+    height: 640px;
+    min-height: 560px;
     background-image: url('../../imgs/emerson-vieira-RO6Ke69Szhg-unsplash.jpg');
     background-size: cover;
     background-position-x: 100px;
-    background-position-y: -80px;
+    background-position-y: -120px;
     margin: 0 0 64px 0;
+    box-shadow: 0px 2px 4px 2px rgb(82, 82, 82);
 }
 
 #hero-gradient-conteiner {

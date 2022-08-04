@@ -1,0 +1,9 @@
+#header-grid-conteiner {
+    height: 64px;
+    background-color: rgb(40, 40, 40);
+    position: sticky;
+}
+
+#header-grid{
+    height: 100%;
+}

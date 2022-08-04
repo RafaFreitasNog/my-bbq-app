@@ -4,6 +4,16 @@
     border: 0px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    flex-direction: column;
+    column-gap: 24px;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
 body {
     background-color: var(--white);
 }
@@ -71,4 +81,12 @@ p {
     font-size: 16;
     font-weight: 400;
     line-height: 100%;
+}
+
+.white {
+    color: var(--white);
+}
+
+.italic {
+    font-style: italic;
 }
