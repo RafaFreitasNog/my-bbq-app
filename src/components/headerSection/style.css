@@ -1,7 +1,8 @@
 #header-grid-conteiner {
     height: 64px;
-    background-color: rgb(40, 40, 40);
+    background-color: var(--black);
     position: sticky;
+    border-bottom: 4px solid var(--yellow);
 }
 
 #header-grid{
@@ -10,4 +11,6 @@
 }
 
 #navbar-icon {
+    width: 32px;
+    height: 32px;
 }
