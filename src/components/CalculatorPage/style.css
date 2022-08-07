@@ -1,0 +1,23 @@
+#background-conteiner {
+    height: 100vh;
+    background-image: url(../../imgs/matt-connor-9Qs_9n2oSJo-unsplash.jpg);
+    background-color: var(--red);
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+}
+
+#grid-conteiner {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    flex-direction: column;
+    column-gap: 24px;
+}
+
+#content-conteiner {
+    height: 560px;
+    grid-column: 5 / span 7;
+    background-color: var(--white);
+    align-self: center;
+    border: var(--yellow) 8px solid;
+}
