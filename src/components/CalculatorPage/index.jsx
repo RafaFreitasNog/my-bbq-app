@@ -8,7 +8,7 @@ function CalculatorPage() {
             <div id='background-conteiner'>
                 <div id='grid-conteiner'>
                     <div id='content-conteiner'>
-
+                        
                     </div>
                 </div>
             </div>

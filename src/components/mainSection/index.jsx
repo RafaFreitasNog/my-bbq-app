@@ -14,7 +14,7 @@ function MainSection() {
                         <img src={book} alt="book-icon" className='title-icon'/>
                         <h5 className='card-title white '>But... Why?</h5>
                     </div>
-                    <p className='card-text white'>It's important to plan your barbecue and calculated the amount of meat you will need in order to stop food waste and unnecessary spending.</p>
+                    <p className='card-text white'>It's important to plan your barbecue and calculate the amount of meat you will need in order to stop food waste and unnecessary spending.</p>
                 </div>
 
                 <div id='card-2' className='card'>

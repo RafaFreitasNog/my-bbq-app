@@ -1,7 +1,6 @@
 #header-grid-conteiner {
     height: 72px;
     background-color: var(--black);
-    position: sticky;
 }
 
 #header-grid{
@@ -12,4 +11,18 @@
 #navbar-icon {
     width: 32px;
     height: 32px;
+    grid-column: 1 / 3;
+}
+
+#navbar-pages {
+    height: 100%;
+    display: flex;
+    grid-column: 10 / 13;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-pages-link {
+    margin-left: 24px;
+    color: var(--white);
 }
