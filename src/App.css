@@ -83,12 +83,6 @@ p {
     line-height: 100%;
 }
 
-button {
-    padding: 12px;
-    background-color: var(--red);
-    display: flex;
-}
-
 .white {
     color: var(--white);
 }

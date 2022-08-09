@@ -1,10 +1,9 @@
 #hero-img-conteiner {
     height: 480px;
-    min-height: 480px;
     background-image: url('../../imgs/emerson-vieira-RO6Ke69Szhg-unsplash.jpg');
     background-size: cover;
-    background-position-x: 100px;
-    background-position-y: -280px;
+    background-repeat: no-repeat;
+    background-position: bottom 24% right;
     margin: 64px 0 64px 0;
     box-shadow: 0px 2px 4px 2px rgb(82, 82, 82);
 }
