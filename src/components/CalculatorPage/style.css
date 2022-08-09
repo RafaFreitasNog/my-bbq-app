@@ -1,5 +1,5 @@
 #background-conteiner {
-    height: 100vh;
+    height: 92vh;
     background-image: url(../../imgs/matt-connor-9Qs_9n2oSJo-unsplash.jpg);
     background-color: var(--red);
     background-size: 40% 100%;
@@ -7,7 +7,7 @@
 }
 
 #grid-conteiner {
-    height: 100vh;
+    height: 92vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     flex-direction: column;
