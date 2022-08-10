@@ -3,7 +3,7 @@ import './style.css'
 
 function FormBarbecueName() {
     return ( 
-        <h3>Name</h3>
+        <h3>lica</h3>
      );
 }
 

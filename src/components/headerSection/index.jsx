@@ -11,8 +11,8 @@ function HeaderSection() {
                 <div id="header-grid" className="grid">
                     <img src={navbarIcon} alt="nav bar logo" id="navbar-icon"/>
                     <div id="navbar-pages">
-                        <Link to='/' className="navbar-pages-link"><p>Home</p></Link>
-                        <Link to='/calculator' className="navbar-pages-link"><p>Calculator</p></Link>
+                        <Link to='/' className="navbar-pages-link"><p className="white">Home</p></Link>
+                        <Link to='/calculator' className="navbar-pages-link"><p className="white">Calculator</p></Link>
                     </div>
                 </div>
             </div>

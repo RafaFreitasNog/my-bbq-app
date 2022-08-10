@@ -11,7 +11,7 @@ function CalculatorPage() {
 
     const [page, setPage] = useState(0);
 
-    const formTitles = ["Step 1", "Step 2", "Step 3"];
+    const formTitles = ["Give your barbecue a name!", "Step 2", "Step 3"];
 
     function PageDisplay() {
         switch (page) {
@@ -47,7 +47,7 @@ function CalculatorPage() {
                     <div id='content-conteiner'>
 
                         <div id='form-title'>
-                            <h4 id='title'>{formTitles[page]}</h4>
+                            <h5 id='title'>{formTitles[page]}</h5>
                         </div>
 
                         <div id='form-body'>

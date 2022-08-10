@@ -3,7 +3,7 @@ import './style.css'
 
 function FormBarbecueAcomp() {
     return ( 
-        <h3>Acompanhamentos</h3>
+        <h3>tiamo</h3>
      );
 }
 

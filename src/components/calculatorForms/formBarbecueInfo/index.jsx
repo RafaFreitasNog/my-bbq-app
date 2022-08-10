@@ -3,7 +3,7 @@ import './style.css'
 
 function FormBarbecueInfo() {
     return ( 
-        <h3>Info</h3>
+        <h3>eu</h3>
      );
 }
 
