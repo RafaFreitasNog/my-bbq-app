@@ -3,11 +3,34 @@ import './style.css'
 // import backImg from '../../imgs/matt-connor-9Qs_9n2oSJo-unsplash.jpg'
 import arrowLeft from '../../imgs/arrow-left-white.png'
 import arrowRight from '../../imgs/arrow-right-white.png'
+import FormBarbecueName from '../calculatorForms/formBarbecueName';
+import FormBarbecueInfo from '../calculatorForms/formBarbecueInfo';
+import FormBarbecueAcomp from '../calculatorForms/formBarbecueAcomp';
 
 function CalculatorPage() {
 
     const [page, setPage] = useState(0);
+
     const formTitles = ["Step 1", "Step 2", "Step 3"];
+
+    function PageDisplay() {
+        switch (page) {
+            case 0:
+                return <FormBarbecueName/>
+                break;
+        
+            case 1:
+                return <FormBarbecueInfo/>
+                break;
+        
+            case 2:
+                return <FormBarbecueAcomp/>
+                break;
+        
+            default:
+                break;
+        }
+    }
 
     function handleNextClick() {
         setPage((oldPage) => oldPage + 1)
@@ -28,7 +51,7 @@ function CalculatorPage() {
                         </div>
 
                         <div id='form-body'>
-                            <h6>oi</h6>
+                            {PageDisplay()}
                         </div>
 
                         <div id='form-buttons'>
