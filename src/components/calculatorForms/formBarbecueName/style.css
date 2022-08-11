@@ -1,0 +1,23 @@
+.subtitle {
+    margin-top: 12px;
+}
+
+.input {
+    margin-top: 12px;
+    width: 50%;
+    transition: 0.3s;
+}
+
+.label {
+    margin-top: 24px;
+}
+
+.line {
+    margin-top: 24px;
+    background-color: gray;
+    height: 1px;
+}
+
+.input:focus {
+    width: 100%;
+}

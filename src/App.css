@@ -26,6 +26,7 @@ body {
     --yellow: #F69F45;
     --khaki: #C9B49E;
     --white: #E6E6E6;
+    --whiteClear: #fbfbfb;
 }
 
 h1 {
@@ -78,10 +79,36 @@ h6 {
 
 p {
     font-family: 'Roboto Mono', monospace;
-    font-size: 16;
+    font-size: 14px;
     font-weight: 400;
     line-height: 100%;
     color: var(--mildBlack);
+}
+
+label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--mildBlack);
+}
+
+.input {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 12px;
+    background-color: var(--whiteClear);
+    color: gray;
+    border-bottom: 2px solid gray;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: grey;
 }
 
 .white {

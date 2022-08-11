@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './style.css'
 
 function FormBarbecueInfo() {
     return ( 
-        <h3>eu</h3>
+        <Fragment>
+            <h5 id='title'>GUESTS</h5>
+            <p className='subtitle'>Tell us more about the people you invited so we can precisely calculate the amount of meat</p>
+
+            <hr className='line'/>
+        </Fragment>
      );
 }
 

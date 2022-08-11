@@ -11,7 +11,13 @@ function CalculatorPage() {
 
     const [page, setPage] = useState(0);
 
-    const formTitles = ["Give your barbecue a name!", "Step 2", "Step 3"];
+    const [barbecueName, setBarbecueName] = useState();
+
+    const [numberMen, setNumberMan] = useState(0);
+    const [numberWomen, setNumberWomen] = useState(0);
+    const [numberChildren, setNumberChildren] = useState(0);
+
+    const formTitles = ["Name Your Babecue", "Step 2", "Step 3"];
 
     function PageDisplay() {
         switch (page) {
@@ -45,25 +51,30 @@ function CalculatorPage() {
             <div id='background-conteiner'>
                 <div id='grid-conteiner'>
                     <div id='content-conteiner'>
+                        <div id='form-conteiner'>
+                            
+                            <div id='form-body'>
+                                {PageDisplay()}
+                            </div>
 
-                        <div id='form-title'>
-                            <h5 id='title'>{formTitles[page]}</h5>
+                            <div id='form-buttons'>
+                                <button onClick={handlePrevClick} disabled={page == 0}>
+                                    <div className='button-div'>
+                                        <img className='button-icons' src={arrowLeft} alt="arrow left" />
+                                        <p className='white'>previous</p>
+                                    </div>
+                                </button>
+
+                                <button onClick={handleNextClick} disabled={page == formTitles.length - 1}>
+                                    <div className='button-div'>
+                                        <p className='white'>next</p>
+                                        <img className='button-icons' src={arrowRight} alt="arrow right" />
+                                    </div>
+                                </button>
+                            </div>
+
                         </div>
 
-                        <div id='form-body'>
-                            {PageDisplay()}
-                        </div>
-
-                        <div id='form-buttons'>
-                            <button onClick={handlePrevClick} disabled={page == 0}>
-                                <img src={arrowLeft} alt="arrow left" />
-                                <h6 className='white'>previous</h6>
-                            </button>
-                            <button onClick={handleNextClick} disabled={page == formTitles.length - 1}>
-                                <h6 className='white'>next</h6>
-                                <img src={arrowRight} alt="arrow right" />
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>

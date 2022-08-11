@@ -20,33 +20,51 @@
     background-color: var(--white);
     align-self: center;
     /*border: var(--white) 8px solid;*/
+    box-shadow: 12px 12px var(--black);
+    border-radius: 4px;
+}
+
+#form-conteiner {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 12px 12px var(--black);
+    margin: auto;
 }
 
-#form-title {
-    
-}
-
-#title {
-    margin: 24px;
+#form-body {
+    margin-top: 48px;
+    width: 64%;
+    display: flex;
+    flex-direction: column;
 }
 
 #form-buttons {
-    width: 100%;
+    width: 64%;
     display: flex;
     justify-content: space-between;
+    margin: 48px 0 24px 0;
+}
+
+.button-icons {
+    width: 12px;
 }
 
 button {
+    width: 160px;
     padding: 12px;
     background-color: var(--red);
-    display: flex;
-    margin: 24px;
+    border-radius: 4px;
     transition: 0.3s;
+}
+
+.button-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
 }
 
 button:hover {
