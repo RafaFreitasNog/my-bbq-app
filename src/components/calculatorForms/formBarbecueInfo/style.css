@@ -19,7 +19,6 @@
 }
 
 .label-img-counter-conteiner {
-    height: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +27,7 @@
 
 .counter-div {
     display: flex;
+    margin: 12px 0 12px 0;
 }
 
 .counter {
@@ -47,4 +47,8 @@
     font-weight: 700;
     color: var(--white);
 
+}
+
+.button-title {
+    margin: 12px 0 12px 0;
 }

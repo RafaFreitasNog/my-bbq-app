@@ -17,13 +17,15 @@ function FormBarbecueName(props) {
 
             <hr className='line'/>
 
-            <label className='label' htmlFor="bbq-name">Name</label>
-            <input 
-            id='bbq-name' 
-            className='input' 
-            type="text" 
-            placeholder="ex: Raphael's Barbecue"
-            onChange={e => handleInputChange(e.target.value)}/>
+            <div id='page1-content-conteiner'>
+                <label className='label' htmlFor="bbq-name">Name</label>
+                <input 
+                id='bbq-name' 
+                className='input' 
+                type="text" 
+                placeholder="ex: Raphael's Barbecue"
+                onChange={e => handleInputChange(e.target.value)}/>
+            </div>
         </Fragment>
      );
 }
