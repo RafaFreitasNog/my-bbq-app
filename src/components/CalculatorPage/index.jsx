@@ -63,14 +63,14 @@ function CalculatorPage() {
                             </div>
 
                             <div id='form-buttons'>
-                                <button onClick={handlePrevClick} disabled={page == 0}>
+                                <button className='page-change-button' onClick={handlePrevClick} disabled={page == 0}>
                                     <div className='button-div'>
                                         <img className='button-icons' src={arrowLeft} alt="arrow left" />
                                         <p className='white'>previous</p>
                                     </div>
                                 </button>
 
-                                <button onClick={handleNextClick} disabled={page == formTitles.length - 1}>
+                                <button className='page-change-button' onClick={handleNextClick} disabled={page == formTitles.length - 1}>
                                     <div className='button-div'>
                                         <p className='white'>next</p>
                                         <img className='button-icons' src={arrowRight} alt="arrow right" />

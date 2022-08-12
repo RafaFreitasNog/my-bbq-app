@@ -7,3 +7,33 @@
     background-color: gray;
     height: 1px;
 }
+
+#counters-conteiner {
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+#counter-div {
+    display: flex;
+}
+
+.counter {
+    height: 32px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-buttons {
+    width: 32px;
+    height: 32px;
+    background-color: var(--red);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+
+}
