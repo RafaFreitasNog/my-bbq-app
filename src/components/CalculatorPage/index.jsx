@@ -10,8 +10,9 @@ import FormBarbecueAcomp from '../calculatorForms/formBarbecueAcomp';
 function CalculatorPage() {
 
     const [page, setPage] = useState(0);
-
     const [barbecueName, setBarbecueName] = useState();
+
+
 
     const [numberMen, setNumberMan] = useState(0);
     const [numberWomen, setNumberWomen] = useState(0);
@@ -22,7 +23,8 @@ function CalculatorPage() {
     function PageDisplay() {
         switch (page) {
             case 0:
-                return <FormBarbecueName/>
+                return <FormBarbecueName
+                        handlePageOneInputChange = {handlePageOneInputChange}/>
                 break;
         
             case 1:
@@ -36,6 +38,9 @@ function CalculatorPage() {
             default:
                 break;
         }
+    }
+    function handlePageOneInputChange(currentInput) {
+        setBarbecueName(currentInput)
     }
 
     function handleNextClick() {
