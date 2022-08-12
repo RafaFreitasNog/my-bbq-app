@@ -8,14 +8,25 @@
     height: 1px;
 }
 
-#counters-conteiner {
+#counters-area-conteiner {
     height: 100%;
+    width: 100%;
     display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-#counter-div {
+.label-img-counter-conteiner {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-div {
     display: flex;
 }
 
