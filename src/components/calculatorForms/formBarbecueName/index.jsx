@@ -4,10 +4,16 @@ import './style.css'
 function FormBarbecueName(props) {
 
     const [barbecueName, setBarbecueName] = useState();
+    const [userName, setUserName] = useState();
 
-    function handleInputChange(currentInput) {
+    function handleBarbecueInputChange(currentInput) {
         setBarbecueName(currentInput)
-        props.handlePageOneInputChange(currentInput)
+        props.handlePageOneBarbecueInputChange(currentInput)
+    }
+
+    function handleUserInputChange(currentInput) {
+        setUserName(currentInput)
+        props.handlePageOneUserInputChange(currentInput)
     }
 
     return ( 
@@ -18,13 +24,21 @@ function FormBarbecueName(props) {
             <hr className='line'/>
 
             <div id='page1-content-conteiner'>
-                <label className='label' htmlFor="bbq-name">Name</label>
+                <label className='label' htmlFor="bbq-name">Barbecue Name</label>
                 <input 
                 id='bbq-name' 
                 className='input' 
                 type="text" 
-                placeholder="ex: Raphael's Barbecue"
-                onChange={e => handleInputChange(e.target.value)}/>
+                placeholder="ex: Birthday Barbecue"
+                onChange={e => handleBarbecueInputChange(e.target.value)}/>
+
+                <label className='label' htmlFor="user-name">Host Name</label>
+                <input 
+                id='your-name' 
+                className='input' 
+                type="text" 
+                placeholder="ex: Raphael Freitas"
+                onChange={e => handleUserInputChange(e.target.value)}/>
             </div>
         </Fragment>
      );

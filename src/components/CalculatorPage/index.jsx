@@ -11,6 +11,7 @@ function CalculatorPage() {
 
     const [page, setPage] = useState(0);
     const [barbecueName, setBarbecueName] = useState();
+    const [userName, setUserName] = useState();
 
 
 
@@ -24,7 +25,8 @@ function CalculatorPage() {
         switch (page) {
             case 0:
                 return <FormBarbecueName
-                        handlePageOneInputChange = {handlePageOneInputChange}/>
+                        handlePageOneBarbecueInputChange = {handlePageOneBarbecueInputChange}
+                        handlePageOneUserInputChange = {handlePageOneUserInputChange}/>
                 break;
         
             case 1:
@@ -39,10 +41,14 @@ function CalculatorPage() {
                 break;
         }
     }
-    function handlePageOneInputChange(currentInput) {
+    function handlePageOneBarbecueInputChange(currentInput) {
         setBarbecueName(currentInput)
     }
 
+    function handlePageOneUserInputChange(currentInput) {
+        setUserName(currentInput)
+    }
+    
     function handleNextClick() {
         setPage((oldPage) => oldPage + 1)
     }
@@ -61,6 +67,8 @@ function CalculatorPage() {
                             <div id='form-body'>
                                 {PageDisplay()}
                             </div>
+                            <p>{userName}</p>
+                            <p>{barbecueName}</p>
 
                             <div id='form-buttons'>
                                 <button className='page-change-button' onClick={handlePrevClick} disabled={page == 0}>
