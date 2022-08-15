@@ -45,33 +45,33 @@ function FormBarbecueInfo() {
 
             <div id='counters-area-conteiner'>
                 <div className='label-img-counter-conteiner'>
+                    <h6 className='button-title'>MALE</h6>
                     <h2>M</h2>
                     <div className='counter-div'>
                         <button disabled={maleCount <= 0} onClick={handleCounterButtonClick} id='male-sub' className='counter-buttons sub'>-</button>
                         <div className='counter'><h6>{String(maleCount).padStart(2, '0')}</h6></div>
                         <button onClick={handleCounterButtonClick} id='male-add' className='counter-buttons add'>+</button>
                     </div> 
-                    <h6 className='button-title'>MALE</h6>
                 </div>
 
                 <div className='label-img-counter-conteiner'>
+                    <h6 className='button-title'>FEMALE</h6>
                     <h2>F</h2>
                     <div className='counter-div'>
                         <button disabled={femaleCount <= 0} onClick={handleCounterButtonClick} id='female-sub' className='counter-buttons sub'>-</button>
                         <div className='counter'><h6>{String(femaleCount).padStart(2, '0')}</h6></div>
                         <button onClick={handleCounterButtonClick} id='female-add' className='counter-buttons add'>+</button>
                     </div> 
-                    <h6 className='button-title'>FEMALE</h6>
                 </div>                 
 
                 <div className='label-img-counter-conteiner'>
+                    <h6 className='button-title'>CHILDREN</h6>
                     <h2>C</h2>
                     <div className='counter-div'>
                         <button disabled={childCount <= 0} onClick={handleCounterButtonClick} id='child-sub' className='counter-buttons sub'>-</button>
                         <div className='counter'><h6>{String(childCount).padStart(2, '0')}</h6></div>
                         <button onClick={handleCounterButtonClick} id='child-add' className='counter-buttons add'>+</button>
                     </div> 
-                    <h6 className='button-title'>CHILDREN</h6>
                 </div>
             </div>
         </Fragment>
