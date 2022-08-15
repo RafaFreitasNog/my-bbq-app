@@ -3,6 +3,7 @@ import './style.css';
 import navbarIcon from "../../imgs/bar-icon-white.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { SidebarData } from "./sidebarData";
 
 
 function HeaderSection() {
@@ -25,7 +26,16 @@ function HeaderSection() {
                 </div>
             </div>
             <div className={sidebar ? 'sidebar active' : 'sidebar'}>
-                <h4>ola</h4>
+                <div id="sidebar-content-conteiner">
+                    <h3 onClick={toggleSidebar} className="white">x</h3>
+                    {SidebarData.map((element, index) => {
+                        return (
+                            <div key={index} className='nav-page-div'>
+                                <Link to={element.path}><h5>{element.title}</h5></Link>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </Fragment>
     )
