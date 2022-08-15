@@ -1,0 +1,12 @@
+#sidebar-conteiner {
+    height: 92vh;
+    width: 320px;
+    background-color: aqua;
+    position: absolute;
+    left: -300px;
+    transition: 0.5s;
+}
+
+#sidebar-conteiner:hover {
+    left: 0px;
+}
