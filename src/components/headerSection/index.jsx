@@ -25,18 +25,24 @@ function HeaderSection() {
                     </div>
                 </div>
             </div>
-            <div className={sidebar ? 'sidebar active' : 'sidebar'}>
-                <div id="sidebar-content-conteiner">
-                    <h3 onClick={toggleSidebar} className="white">x</h3>
+            <nav className={sidebar ? 'sidebar active' : 'sidebar'}>
+                <ul id="sidebar-elements-conteiner">
+                    <li className="sidebar-li-element">
+                        <h6 onClick={toggleSidebar} className="white sidebar-element-content li-title">x</h6>
+                    </li>
                     {SidebarData.map((element, index) => {
                         return (
-                            <div key={index} className='nav-page-div'>
-                                <Link to={element.path}><h5>{element.title}</h5></Link>
-                            </div>
+                            <li key={index} className='sidebar-li-element'>
+                                <Link to={element.path}className="sidebar-link">
+                                    <div className="sidebar-element-content">
+                                        <h6 className="li-title">{element.title}</h6>
+                                    </div>
+                                </Link>
+                            </li>
                         )
                     })}
-                </div>
-            </div>
+                </ul>
+            </nav>
         </Fragment>
     )
 }

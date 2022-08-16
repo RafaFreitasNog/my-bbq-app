@@ -25,6 +25,7 @@
 .navbar-pages-link {
     margin-left: 24px;
     color: var(--white);
+    text-decoration: none;
 }
 
 .sidebar {
@@ -39,4 +40,45 @@
 
 .sidebar.active {
     left: 0px;
+}
+
+#sidebar-elements-conteiner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar-li-element {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px gray solid;
+}
+
+.sidebar-li-element:hover {
+    background-color: rgb(34, 34, 34);
+    transition: 0.3s;
+}
+
+.sidebar-element-content {
+    margin-left: 64px;
+}
+
+.li-title {
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.sidebar-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
