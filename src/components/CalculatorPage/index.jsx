@@ -15,7 +15,7 @@ function CalculatorPage() {
 
 
 
-    const [numberMen, setNumberMan] = useState(0);
+    const [numberMen, setNumberMen] = useState(0);
     const [numberWomen, setNumberWomen] = useState(0);
     const [numberChildren, setNumberChildren] = useState(0);
 
@@ -30,7 +30,10 @@ function CalculatorPage() {
                 break;
         
             case 1:
-                return <FormBarbecueInfo/>
+                return <FormBarbecueInfo
+                        setNumberMen = {setNumberMen}
+                        setNumberWomen = {setNumberWomen}
+                        setNumberChildren = {setNumberChildren}/>
                 break;
         
             case 2:
@@ -67,11 +70,12 @@ function CalculatorPage() {
                             <div id='form-body'>
                                 {PageDisplay()}
                             </div>
-                            <p>{userName}</p>
-                            <p>{barbecueName}</p>
+                            <p>{numberMen}</p>
+                            <p>{numberWomen}</p>
+                            <p>{numberChildren}</p>
 
                             <div id='form-buttons'>
-                                <button className='page-change-button' onClick={handlePrevClick} disabled={page == 0}>
+                                <button className={page == 0 ? 'page-change-button disabled' : 'page-change-button'} onClick={handlePrevClick} disabled={page == 0}>
                                     <div className='button-div'>
                                         <img className='button-icons' src={arrowLeft} alt="arrow left" />
                                         <p className='white'>previous</p>

@@ -1,7 +1,8 @@
 import React, { Fragment, useState } from 'react';
+import { useEffect } from 'react';
 import './style.css'
 
-function FormBarbecueInfo() {
+function FormBarbecueInfo(props) {
 
     const [maleCount, setMaleCount] = useState(0);
     const [femaleCount, setFemaleCount] = useState(0);
@@ -35,6 +36,12 @@ function FormBarbecueInfo() {
         }
         console.log(id)
     }
+
+    useEffect(() => {
+        props.setNumberMen(maleCount)
+        props.setNumberWomen(femaleCount)
+        props.setNumberChildren(childCount)
+    }, [maleCount, femaleCount, childCount])
 
     return ( 
         <Fragment>
