@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { useEffect } from 'react';
 import './style.css'
 
 function FormBarbecueName(props) {
@@ -8,13 +9,16 @@ function FormBarbecueName(props) {
 
     function handleBarbecueInputChange(currentInput) {
         setBarbecueName(currentInput)
-        props.handlePageOneBarbecueInputChange(currentInput)
     }
 
     function handleUserInputChange(currentInput) {
         setUserName(currentInput)
-        props.handlePageOneUserInputChange(currentInput)
     }
+
+    useEffect(() => {
+        props.handlePageOneBarbecueInputChange(barbecueName)
+        props.handlePageOneUserInputChange(userName)
+    }, [barbecueName, userName])
 
     return ( 
         <Fragment>

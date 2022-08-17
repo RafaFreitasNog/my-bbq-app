@@ -4,9 +4,9 @@ import './style.css'
 
 function FormBarbecueInfo(props) {
 
-    const [maleCount, setMaleCount] = useState(0);
-    const [femaleCount, setFemaleCount] = useState(0);
-    const [childCount, setChildCount] = useState(0);
+    const [maleCount, setMaleCount] = useState(props.saveMale);
+    const [femaleCount, setFemaleCount] = useState(props.saveFemale);
+    const [childCount, setChildCount] = useState(props.saveChildren);
 
     function handleCounterButtonClick(e) {
         const id = e.target.attributes.id.value

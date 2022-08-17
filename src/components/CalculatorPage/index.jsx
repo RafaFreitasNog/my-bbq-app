@@ -10,10 +10,9 @@ import FormBarbecueAcomp from '../calculatorForms/formBarbecueAcomp';
 function CalculatorPage() {
 
     const [page, setPage] = useState(0);
+
     const [barbecueName, setBarbecueName] = useState();
     const [userName, setUserName] = useState();
-
-
 
     const [numberMen, setNumberMen] = useState(0);
     const [numberWomen, setNumberWomen] = useState(0);
@@ -33,7 +32,10 @@ function CalculatorPage() {
                 return <FormBarbecueInfo
                         setNumberMen = {setNumberMen}
                         setNumberWomen = {setNumberWomen}
-                        setNumberChildren = {setNumberChildren}/>
+                        setNumberChildren = {setNumberChildren}
+                        saveMale = {numberMen}
+                        saveFemale = {numberWomen}
+                        saveChildren = {numberChildren}/>
                 break;
         
             case 2:
@@ -70,6 +72,8 @@ function CalculatorPage() {
                             <div id='form-body'>
                                 {PageDisplay()}
                             </div>
+                            <p>{barbecueName}</p>
+                            <p>{userName}</p>
                             <p>{numberMen}</p>
                             <p>{numberWomen}</p>
                             <p>{numberChildren}</p>
