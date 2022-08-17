@@ -11,8 +11,8 @@ function CalculatorPage() {
 
     const [page, setPage] = useState(0);
 
-    const [barbecueName, setBarbecueName] = useState();
-    const [userName, setUserName] = useState();
+    const [barbecueName, setBarbecueName] = useState("");
+    const [userName, setUserName] = useState("");
 
     const [numberMen, setNumberMen] = useState(0);
     const [numberWomen, setNumberWomen] = useState(0);
@@ -25,7 +25,9 @@ function CalculatorPage() {
             case 0:
                 return <FormBarbecueName
                         handlePageOneBarbecueInputChange = {handlePageOneBarbecueInputChange}
-                        handlePageOneUserInputChange = {handlePageOneUserInputChange}/>
+                        handlePageOneUserInputChange = {handlePageOneUserInputChange}
+                        saveBarbecueName = {barbecueName}
+                        saveUserName = {userName}/>
                 break;
         
             case 1:

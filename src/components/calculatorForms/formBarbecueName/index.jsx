@@ -4,21 +4,13 @@ import './style.css'
 
 function FormBarbecueName(props) {
 
-    const [barbecueName, setBarbecueName] = useState();
-    const [userName, setUserName] = useState();
-
     function handleBarbecueInputChange(currentInput) {
-        setBarbecueName(currentInput)
+        props.handlePageOneBarbecueInputChange(currentInput)
     }
 
     function handleUserInputChange(currentInput) {
-        setUserName(currentInput)
+        props.handlePageOneUserInputChange(currentInput)
     }
-
-    useEffect(() => {
-        props.handlePageOneBarbecueInputChange(barbecueName)
-        props.handlePageOneUserInputChange(userName)
-    }, [barbecueName, userName])
 
     return ( 
         <Fragment>
@@ -34,7 +26,8 @@ function FormBarbecueName(props) {
                 className='input' 
                 type="text" 
                 placeholder="ex: Birthday Barbecue"
-                onChange={e => handleBarbecueInputChange(e.target.value)}/>
+                value={props.saveBarbecueName}
+                onChange={(e) => handleBarbecueInputChange(e.target.value)}/>
 
                 <label className='label' htmlFor="user-name">Host Name</label>
                 <input 
@@ -42,7 +35,8 @@ function FormBarbecueName(props) {
                 className='input' 
                 type="text" 
                 placeholder="ex: Raphael Freitas"
-                onChange={e => handleUserInputChange(e.target.value)}/>
+                value={props.saveUserName}
+                onChange={(e) => handleUserInputChange(e.target.value)}/>
             </div>
         </Fragment>
      );
