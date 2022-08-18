@@ -1,0 +1,16 @@
+#radio-input-conteiner {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-input {
+    margin: 12px 0 0 0;
+}
+
+.radio-input.second {
+    margin: 12px 0 0 24px;
+}
+
+.radio-input-label {
+    margin-left: 8px;
+}
