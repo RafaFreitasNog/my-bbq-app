@@ -20,12 +20,12 @@ function FormBarbecueAcomp(props) {
                 <p className='subtitle'>will there be any other food such as salads, rice, potatoes?</p>
                 <div id='radio-input-conteiner'>
                     <div className='radio-input'>
-                        <input type="radio" id='yes' name='acompanhamentos' value={true}
+                        <input type="radio" id='yes' name='acompanhamentos' value={true} checked={props.saveIsThereFood === "true"}
                         onChange={(e) => handleRadioInputChange(e.target.value)}/>
                         <label htmlFor="yes" className='radio-input-label'>Yes</label>
                     </div>
                     <div className='radio-input second'>
-                        <input type="radio" id='no' name='acompanhamentos' value={false}
+                        <input type="radio" id='no' name='acompanhamentos' value={false} checked={props.saveIsThereFood === "false"}
                         onChange={(e) => handleRadioInputChange(e.target.value)}/>
                         <label htmlFor="no" className='radio-input-label'>No</label>
                     </div>
