@@ -18,6 +18,8 @@ function CalculatorPage() {
     const [numberWomen, setNumberWomen] = useState(0);
     const [numberChildren, setNumberChildren] = useState(0);
 
+    const [isThereFood, setIsThereFood] = useState();
+
     const formTitles = ["Name Your Babecue", "Step 2", "Step 3"];
 
     function PageDisplay() {
@@ -28,8 +30,6 @@ function CalculatorPage() {
                         handlePageOneUserInputChange = {handlePageOneUserInputChange}
                         saveBarbecueName = {barbecueName}
                         saveUserName = {userName}/>
-                break;
-        
             case 1:
                 return <FormBarbecueInfo
                         setNumberMen = {setNumberMen}
@@ -38,12 +38,10 @@ function CalculatorPage() {
                         saveMale = {numberMen}
                         saveFemale = {numberWomen}
                         saveChildren = {numberChildren}/>
-                break;
-        
             case 2:
-                return <FormBarbecueAcomp/>
-                break;
-        
+                return <FormBarbecueAcomp
+                        setIsThereFood = {setIsThereFood}
+                        saveIsThereFood = {isThereFood}/>
             default:
                 break;
         }
@@ -79,16 +77,17 @@ function CalculatorPage() {
                             <p>{numberMen}</p>
                             <p>{numberWomen}</p>
                             <p>{numberChildren}</p>
+                            <p>{isThereFood}</p>
 
                             <div id='form-buttons'>
-                                <button className={page == 0 ? 'page-change-button disabled' : 'page-change-button'} onClick={handlePrevClick} disabled={page == 0}>
+                                <button className={page === 0 ? 'page-change-button disabled' : 'page-change-button'} onClick={handlePrevClick} disabled={page === 0}>
                                     <div className='button-div'>
                                         <img className='button-icons' src={arrowLeft} alt="arrow left" />
                                         <p className='white'>previous</p>
                                     </div>
                                 </button>
 
-                                <button className='page-change-button' onClick={handleNextClick} disabled={page == formTitles.length - 1}>
+                                <button className='page-change-button' onClick={handleNextClick} disabled={page === formTitles.length - 1}>
                                     <div className='button-div'>
                                         <p className='white'>next</p>
                                         <img className='button-icons' src={arrowRight} alt="arrow right" />
