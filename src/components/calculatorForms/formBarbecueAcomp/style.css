@@ -1,16 +1,46 @@
 #radio-input-conteiner {
+    margin: 16px 0 0 8px;
     display: flex;
     flex-direction: row;
 }
 
 .radio-input {
-    margin: 12px 0 0 0;
+    margin: 0 0 0 0;
+    display: flex;
+    align-items: center;
 }
 
 .radio-input.second {
-    margin: 12px 0 0 24px;
+    margin: 0 0 0 24px;
 }
 
 .radio-input-label {
     margin-left: 8px;
+    cursor: pointer;
+}
+
+.radio {
+    display: none;
+}
+
+.custom-button {
+    width: 16px;
+    height: 16px;
+    border: 2px var(--red) solid;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--red);
+}
+
+.not-selected {
+    display: none;
 }
