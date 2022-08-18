@@ -39,8 +39,10 @@
     height: 12px;
     border-radius: 50%;
     background-color: var(--red);
+    transition: 0.3s;
 }
 
 .not-selected {
-    display: none;
+    width: 0px;
+    height: 0px;
 }
