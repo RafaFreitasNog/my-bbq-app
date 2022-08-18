@@ -8,10 +8,6 @@
 
 #grid-conteiner {
     height: 92vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    flex-direction: column;
-    column-gap: 24px;
 }
 
 #content-conteiner {

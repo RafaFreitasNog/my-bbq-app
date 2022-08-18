@@ -65,7 +65,7 @@ function CalculatorPage() {
     return ( 
         <Fragment>
             <div id='background-conteiner'>
-                <div id='grid-conteiner'>
+                <div id='grid-conteiner' className='grid'>
                     <div id='content-conteiner'>
                         <div id='form-conteiner'>
                             
