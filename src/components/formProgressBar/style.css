@@ -1,0 +1,7 @@
+#progress-bar-conteiner {
+    background-color: var(--black);
+    opacity: 0.8;
+    height: 560px;
+    grid-column: 4 / 5;
+    align-self: center;
+}

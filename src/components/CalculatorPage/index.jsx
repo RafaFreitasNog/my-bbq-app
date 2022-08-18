@@ -6,6 +6,7 @@ import arrowRight from '../../imgs/arrow-right-white.png'
 import FormBarbecueName from '../calculatorForms/formBarbecueName';
 import FormBarbecueInfo from '../calculatorForms/formBarbecueInfo';
 import FormBarbecueAcomp from '../calculatorForms/formBarbecueAcomp';
+import FormProgressBar from '../formProgressBar';
 
 function CalculatorPage() {
 
@@ -66,21 +67,17 @@ function CalculatorPage() {
         <Fragment>
             <div id='background-conteiner'>
                 <div id='grid-conteiner' className='grid'>
+                    <FormProgressBar/>
                     <div id='content-conteiner'>
                         <div id='form-conteiner'>
                             
                             <div id='form-body'>
                                 {PageDisplay()}
                             </div>
-                            <p>{barbecueName}</p>
-                            <p>{userName}</p>
-                            <p>{numberMen}</p>
-                            <p>{numberWomen}</p>
-                            <p>{numberChildren}</p>
-                            <p>{isThereFood}</p>
 
                             <div id='form-buttons'>
-                                <button className={page === 0 ? 'page-change-button disabled' : 'page-change-button'} onClick={handlePrevClick} disabled={page === 0}>
+                                <button className={page === 0 ? 'page-change-button disabled' : 'page-change-button'} 
+                                onClick={handlePrevClick} disabled={page === 0}>
                                     <div className='button-div'>
                                         <img className='button-icons' src={arrowLeft} alt="arrow left" />
                                         <p className='white'>previous</p>
