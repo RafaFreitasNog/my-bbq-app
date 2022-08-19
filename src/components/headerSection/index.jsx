@@ -20,8 +20,8 @@ function HeaderSection() {
                 <div id="header-grid" className="grid">
                     <img onClick={toggleSidebar} src={navbarIcon} alt="nav bar logo" id="navbar-icon"/>
                     <div id="navbar-pages">
-                        <Link to='/' className="navbar-pages-link"><p className="white">Home</p></Link>
-                        <Link to='/calculator' className="navbar-pages-link"><p className="white">Calculator</p></Link>
+                        <Link to='/' className="navbar-pages-link"><h6 className="white link-title">Home</h6></Link>
+                        <Link to='/calculator' className="navbar-pages-link"><h6 className="white link-title">Calculator</h6></Link>
                     </div>
                 </div>
             </div>
