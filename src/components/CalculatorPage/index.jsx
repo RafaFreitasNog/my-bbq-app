@@ -67,7 +67,8 @@ function CalculatorPage() {
         <Fragment>
             <div id='background-conteiner'>
                 <div id='grid-conteiner' className='grid'>
-                    <FormProgressBar/>
+                    <FormProgressBar
+                    page = {page}/>
                     <div id='content-conteiner'>
                         <div id='form-conteiner'>
                             
