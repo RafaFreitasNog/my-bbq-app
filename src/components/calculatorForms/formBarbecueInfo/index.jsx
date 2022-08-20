@@ -12,22 +12,22 @@ function FormBarbecueInfo(props) {
         const id = e.target.attributes.id.value
         switch (id) {
             case "male-sub":
-                setMaleCount(maleCount - 1)
+                setMaleCount((oldMaleCount) => oldMaleCount - 1)
                 break;
             case "male-add":
-                setMaleCount(maleCount + 1)
+                setMaleCount((oldMaleCount) => oldMaleCount + 1)
                 break;
             case "female-sub":
-                setFemaleCount(femaleCount - 1)
+                setFemaleCount((oldFemaleCount) => oldFemaleCount - 1)
                 break;
             case "female-add":
-                setFemaleCount(femaleCount + 1)
+                setFemaleCount((oldFemaleCount) => oldFemaleCount + 1)
                 break;
             case "child-sub":
-                setChildCount(childCount - 1)
+                setChildCount((oldChildCount) => oldChildCount - 1)
                 break;
             case "child-add":
-                setChildCount(childCount + 1)
+                setChildCount((oldChildCount) => oldChildCount + 1)
                 break;
         
             default:
@@ -41,7 +41,7 @@ function FormBarbecueInfo(props) {
         props.setNumberMen(maleCount)
         props.setNumberWomen(femaleCount)
         props.setNumberChildren(childCount)
-    }, [maleCount, femaleCount, childCount])
+    }, [maleCount, femaleCount, childCount, props])
 
     return ( 
         <Fragment>
