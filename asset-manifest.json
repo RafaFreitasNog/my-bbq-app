@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my-bbq-app/static/css/main.4c397ca1.css",
+    "main.js": "/my-bbq-app/static/js/main.a35e1b7d.js",
+    "static/media/matt-connor-9Qs_9n2oSJo-unsplash.jpg": "/my-bbq-app/static/media/matt-connor-9Qs_9n2oSJo-unsplash.6ec19034321d3f0547e5.jpg",
+    "static/media/emerson-vieira-RO6Ke69Szhg-unsplash.jpg": "/my-bbq-app/static/media/emerson-vieira-RO6Ke69Szhg-unsplash.f7ce050131f64d593f26.jpg",
+    "index.html": "/my-bbq-app/index.html",
+    "main.4c397ca1.css.map": "/my-bbq-app/static/css/main.4c397ca1.css.map",
+    "main.a35e1b7d.js.map": "/my-bbq-app/static/js/main.a35e1b7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c397ca1.css",
+    "static/js/main.a35e1b7d.js"
+  ]
+}
