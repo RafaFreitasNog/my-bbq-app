@@ -2,7 +2,7 @@ import './App.css';
 import { Fragment } from 'react';
 import HeaderSection from "./components/headerSection";
 import MainMenu from './components/MainMenu';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import CalculatorPage from './components/CalculatorPage';
 
 function App() {
