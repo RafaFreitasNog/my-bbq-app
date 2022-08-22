@@ -1,0 +1,5 @@
+#result-card-conteiner{
+    height: 100%;
+    width: 100%;
+    background-color: var(--red);
+}

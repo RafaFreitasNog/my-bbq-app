@@ -7,6 +7,7 @@ import FormBarbecueName from '../calculatorForms/formBarbecueName';
 import FormBarbecueInfo from '../calculatorForms/formBarbecueInfo';
 import FormBarbecueAcomp from '../calculatorForms/formBarbecueAcomp';
 import FormProgressBar from '../formProgressBar';
+import FormBarbecueResult from '../calculatorForms/formBarbecueResult';
 
 function CalculatorPage() {
 
@@ -20,8 +21,6 @@ function CalculatorPage() {
     const [numberChildren, setNumberChildren] = useState(0);
 
     const [isThereFood, setIsThereFood] = useState();
-
-    const formTitles = ["Name Your Babecue", "Step 2", "Step 3"];
 
     function PageDisplay() {
         switch (page) {
@@ -43,6 +42,8 @@ function CalculatorPage() {
                 return <FormBarbecueAcomp
                         setIsThereFood = {setIsThereFood}
                         saveIsThereFood = {isThereFood}/>
+            case 3:
+                return <FormBarbecueResult/>
             default:
                 break;
         }
@@ -85,7 +86,7 @@ function CalculatorPage() {
                                     </div>
                                 </button>
 
-                                <button className='page-change-button' onClick={handleNextClick} disabled={page === formTitles.length - 1}>
+                                <button className='page-change-button' onClick={handleNextClick} disabled={page === 3}>
                                     <div className='button-div'>
                                         <p className='white'>{page === 2 ? 'calculate' : 'next'}</p>
                                         <img className='button-icons' src={arrowRight} alt="arrow right" />

@@ -12,6 +12,8 @@ function FormProgressBar(props) {
                 return "progress-2";
             case 2:
                 return "progress-3";
+            case 3:
+                return "progress-4";
         
             default:
                 break;
