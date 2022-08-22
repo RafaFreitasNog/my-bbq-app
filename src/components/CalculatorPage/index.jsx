@@ -87,7 +87,7 @@ function CalculatorPage() {
 
                                 <button className='page-change-button' onClick={handleNextClick} disabled={page === formTitles.length - 1}>
                                     <div className='button-div'>
-                                        <p className='white'>next</p>
+                                        <p className='white'>{page === 2 ? 'calculate' : 'next'}</p>
                                         <img className='button-icons' src={arrowRight} alt="arrow right" />
                                     </div>
                                 </button>
