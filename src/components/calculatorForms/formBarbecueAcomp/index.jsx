@@ -5,7 +5,6 @@ function FormBarbecueAcomp(props) {
 
     function handleRadioInputChange(value) {
         props.setIsThereFood(value)
-        console.log(value)
     }
 
     return ( 

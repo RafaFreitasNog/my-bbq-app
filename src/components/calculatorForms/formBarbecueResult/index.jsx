@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Fragment } from 'react';
-import LoadingScreen from '../../loadingScreen';
 import './style.css';
 
 function FormBarbecueResult(props) {
@@ -37,13 +36,12 @@ function FormBarbecueResult(props) {
         <Fragment>
             <div id='result-card-conteiner'>
                 <div id='result-card-title-div'>
-                    <h5 id='result-title'>blablablabl</h5>
-                    <p id='result-subtitle'>blblblbl</p>
+                    <h5 id='result-title' className='white'>{props.barbecueName}</h5>
+                    <p id='result-subtitle' className='white'>by: {props.userName}</p>
                 </div>
                 <div id='result-card-body-div'>
-                    <h6 className='body-txt'>Meat Weight: </h6>
-                    <h6 className='body-txt'>{result}</h6>
-                    <p>{props.isThereFood}</p>
+                    <h6 className='body-txt white'>Total meat weight:</h6>
+                    <h6 className='body-txt white'>{result}</h6>
                 </div>
             </div>
         </Fragment>

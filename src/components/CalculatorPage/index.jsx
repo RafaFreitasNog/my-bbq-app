@@ -44,6 +44,8 @@ function CalculatorPage() {
                         saveIsThereFood = {isThereFood}/>
             case 3:
                 return <FormBarbecueResult
+                        barbecueName = {barbecueName}
+                        userName = {userName}
                         numberMen = {numberMen}
                         numberWomen = {numberWomen}
                         numberChildren = {numberChildren}

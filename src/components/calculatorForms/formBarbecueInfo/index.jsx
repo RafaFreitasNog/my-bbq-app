@@ -34,7 +34,6 @@ function FormBarbecueInfo(props) {
                 console.log("deu ruim")
                 break;
         }
-        console.log(id)
     }
 
     useEffect(() => {

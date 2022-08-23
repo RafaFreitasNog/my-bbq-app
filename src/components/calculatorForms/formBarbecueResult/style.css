@@ -1,9 +1,31 @@
-#result-card-conteiner{
-    height: 100%;
+#result-card-conteiner {
+    height: 400px;
     width: 100%;
     background-color: var(--red);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+#result-card-title-div {
+    margin: 24px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result-card-body-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.body-txt {
+    margin-bottom: 12px;
+}
+
+#result-title {
+    margin-bottom: 12px;
 }
