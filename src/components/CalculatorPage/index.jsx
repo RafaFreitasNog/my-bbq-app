@@ -20,7 +20,7 @@ function CalculatorPage() {
     const [numberWomen, setNumberWomen] = useState(0);
     const [numberChildren, setNumberChildren] = useState(0);
 
-    const [isThereFood, setIsThereFood] = useState();
+    const [isThereFood, setIsThereFood] = useState(false);
 
     function PageDisplay() {
         switch (page) {
@@ -46,7 +46,8 @@ function CalculatorPage() {
                 return <FormBarbecueResult
                         numberMen = {numberMen}
                         numberWomen = {numberWomen}
-                        numberChildren = {numberChildren}/>
+                        numberChildren = {numberChildren}
+                        isThereFood = {isThereFood}/>
             default:
                 break;
         }
