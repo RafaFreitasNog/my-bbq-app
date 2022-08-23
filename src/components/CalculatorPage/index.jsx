@@ -43,7 +43,10 @@ function CalculatorPage() {
                         setIsThereFood = {setIsThereFood}
                         saveIsThereFood = {isThereFood}/>
             case 3:
-                return <FormBarbecueResult/>
+                return <FormBarbecueResult
+                        numberMen = {numberMen}
+                        numberWomen = {numberWomen}
+                        numberChildren = {numberChildren}/>
             default:
                 break;
         }
