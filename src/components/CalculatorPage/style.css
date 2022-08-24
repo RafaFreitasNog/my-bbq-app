@@ -59,6 +59,7 @@
     font-size: 16px;
     font-weight: 700;
     color: var(--white);
+    cursor: pointer;
 }
 
 .button-div {
@@ -75,5 +76,6 @@ button:hover {
 
 .disabled {
     opacity: 0.6;
+    cursor: not-allowed;
 }
 
