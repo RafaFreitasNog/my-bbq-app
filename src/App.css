@@ -107,9 +107,24 @@ label {
     line-height: 100%;
 }
 
+.title {
+    text-transform: uppercase;
+}
+
 .subtitle {
     font-size: 14px;
     color: grey;
+}
+
+.subtitle-forms {
+    margin-top: 12px;
+}
+
+.line {
+    margin: 24px 0 0 0;
+    background-color: gray;
+    height: 1px;
+    width: 100%;
 }
 
 .white {

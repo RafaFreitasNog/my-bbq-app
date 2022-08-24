@@ -14,7 +14,7 @@ function FormBarbecueName(props) {
     return ( 
         <Fragment>
             <h5 id='title'>NAME YOUR BARBECUE</h5>
-            <p className='subtitle'>Give it a name so we can turn your experience even more unique and personalized</p>
+            <p className='subtitle-forms subtitle'>Give it a name so we can turn your experience even more unique and personalized</p>
 
             <hr className='line'/>
 

@@ -1,6 +1,4 @@
-.subtitle {
-    margin-top: 12px;
-}
+
 
 .input {
     height: 12px;
@@ -11,12 +9,6 @@
 
 .label {
     margin-top: 24px;
-}
-
-.line {
-    margin: 24px 0 0 0;
-    background-color: gray;
-    height: 1px;
 }
 
 .input:focus {

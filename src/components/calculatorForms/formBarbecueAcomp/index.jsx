@@ -10,13 +10,13 @@ function FormBarbecueAcomp(props) {
     return ( 
         <Fragment>
             <h5 id='title'>OTHER INFORMATION</h5>
-            <p className='subtitle'>This will help us be even more precise with our calculation</p>
+            <p className='subtitle-forms subtitle'>This will help us be even more precise with our calculation</p>
 
             <hr className='line'/>
 
             <form>
                 <h6 className='label'>Side Dishes</h6>
-                <p className='subtitle'>will there be any other food such as salads, rice, potatoes?</p>
+                <p className='subtitle-forms subtitle'>will there be any other food such as salads, rice, potatoes?</p>
                 <div id='radio-input-conteiner'>
                     <div className='radio-input'>
                         <label className='custom-button'>

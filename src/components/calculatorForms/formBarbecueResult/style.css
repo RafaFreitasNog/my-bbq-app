@@ -1,11 +1,13 @@
 #result-card-conteiner {
     height: 400px;
     width: 100%;
-    background-color: var(--red);
+    background-color: var(--whiteClear);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    box-shadow: 0px 0px 8px 0px gray;
+    border-radius: 4px;
 }
 
 #result-card-title-div {
@@ -16,16 +18,30 @@
 }
 
 #result-card-body-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
+    margin: 24px 0 12px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .body-txt {
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 }
 
 #result-title {
     margin-bottom: 12px;
+}
+
+.table-title {
+    margin-left: 24px;
+    justify-self: flex-start;
+}
+
+.table-value {
+    margin-right: 24px;
+    justify-self: flex-end;
+}
+
+.line-result {
+    width: 80%;
 }

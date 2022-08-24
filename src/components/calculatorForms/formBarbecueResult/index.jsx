@@ -5,6 +5,9 @@ import './style.css';
 
 function FormBarbecueResult(props) {
     const [result, setResult] = useState(0);
+    const [menResult, setMenResult] = useState(0);
+    const [womenResult, setWomenResult] = useState(0);
+    const [childrenResult, setChildrenResult] = useState(0);
     
 
     useEffect(() => {
@@ -23,9 +26,12 @@ function FormBarbecueResult(props) {
                 womenMeat = props.numberWomen * 400
                 childrenMeat = props.numberChildren * 250
             }
-
+            
             let totalMeat = menMeat + womenMeat + childrenMeat;
-
+            
+            setMenResult(menMeat)
+            setWomenResult(womenMeat)
+            setChildrenResult(childrenMeat)
             setResult(totalMeat)
         }
 
@@ -36,12 +42,24 @@ function FormBarbecueResult(props) {
         <Fragment>
             <div id='result-card-conteiner'>
                 <div id='result-card-title-div'>
-                    <h5 id='result-title' className='white'>{props.barbecueName}</h5>
-                    <p id='result-subtitle' className='white'>by: {props.userName}</p>
+                    <h5 id='result-title' className='title'>{props.barbecueName}</h5>
+                    <p id='result-subtitle' className='subtitle'>by: {props.userName}</p>
                 </div>
+
+                <hr className='line line-result'/>
+
                 <div id='result-card-body-div'>
-                    <h6 className='body-txt white'>Total meat weight:</h6>
-                    <h6 className='body-txt white'>{result}</h6>
+                    <p className='subtitle body-txt table-title'>Men...</p>
+                    <p className='subtitle body-txt table-value'>...{menResult} Kg</p>
+                    
+                    <p className='subtitle body-txt table-title'>Women...</p>
+                    <p className='subtitle body-txt table-value'>...{womenResult} Kg</p>
+
+                    <p className='subtitle body-txt table-title'>Children...</p>
+                    <p className='subtitle body-txt table-value'>...{childrenResult} Kg</p>
+
+                    <h6 className='body-txt table-title'>Total...</h6>
+                    <h6 className='body-txt table-value'>...{result} Kg</h6>
                 </div>
             </div>
         </Fragment>
