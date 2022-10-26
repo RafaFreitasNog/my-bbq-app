@@ -32,10 +32,6 @@ function MainSection() {
                     </div>
                     <p className='card-text white'>Liked the idea? So click here and start planning your next barbecue party!</p>
                 </div>
-
-                <div id='main-section-conteiner'>
-                    <h3 id='oi'>Calcule o seu churrasco!</h3>
-                </div>
             </div>
         </Fragment>
     )
